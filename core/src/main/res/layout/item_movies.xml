@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cyan"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_home_movie"
+            android:layout_width="170dp"
+            android:layout_height="240dp"
+            android:background="@android:color/white"
+            android:contentDescription="@string/items_movie"
+            android:scaleType="fitXY"
+            android:src="@drawable/movie_how_to_train" />
+
+        <TextView
+            android:id="@+id/title_home_movie"
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:gravity="left"
+            android:text="@string/title_movie" />
+
+        <TextView
+            android:id="@+id/date_home_movie"
+            style="@style/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="left"
+            android:text="@string/date" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyCatalog</string>
+
+    <string name="title_movie">Example Title</string>
+    <string name="date">Jul 28, 2021</string>
+    <string name="items_movie">Item movies</string>
+</resources>

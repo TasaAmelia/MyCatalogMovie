@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MyCatalogs</string>
+    <string name="title_movie">Movie</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="date">Jul 28, 2021</string>
+    <string name="genre">Adventure, fantasy, comedy</string>
+    <string name="user_score">User Score</string>
+    <string name="user_score_example">80%</string>
+    <string name="popularity">Popularity</string>
+    <string name="popularity_example">320.130</string>
+    <string name="title_overview">Overview</string>
+    <string name="overview">"This is the example of overview bla.... "</string>
+    <string name="no_data">Data favorite not added yet....</string>
+    <string name="title_tes">tes</string>
+    <string name="title_genre">Genre :</string>
+    <string name="image_detail">Image detail movie</string>
+    <string name="icon_date">Icon date</string>
+    <string name="detail">Detail</string>
+</resources>
