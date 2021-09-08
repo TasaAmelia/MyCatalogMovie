@@ -6,8 +6,7 @@ import com.s2.made.core.domain.model.Movie
 
 object DataMapper {
     fun mapResponsesToEntities(
-            input: List<MovieResponse>,
-            //
+            input: List<MovieResponse>
     ): List<MovieEntity> {
         val catalogList = ArrayList<MovieEntity>()
         var genre = ""

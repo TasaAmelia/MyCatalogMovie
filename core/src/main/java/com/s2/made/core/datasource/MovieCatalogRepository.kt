@@ -39,11 +39,7 @@ class MovieCatalogRepository(
                 }
             }.asFlowable()
 
-    override fun getDetailMovie(
-            movieId: String,
-//            state: Boolean,
-//            category: String
-    ): Flowable<Resource<Movie>> =
+    override fun getDetailMovie(movieId: String): Flowable<Resource<Movie>> =
             object : NetworkBoundResource<Movie, MovieResponse>(appExecutors) {
                 override fun loadFromDB(): Flowable<Movie> {
                     return localDataSource.getMovieById(movieId).map { DataMapper.mapEntityToDomain(it) }
