@@ -34,12 +34,9 @@ class DetailMovieActivity : AppCompatActivity() {
 
     private fun getDetailMovieViewModelLive() {
         val id = intent.extras?.getInt(EXTRA_ID)
-        val favorite = intent.extras?.getBoolean(EXTRA_FAVORITE)
-        val category = intent.extras?.getString(EXTRA_CATEGORY)
         if (id != null) {
-            if (favorite != null) {
-                if (category != null) {
-                    detailMovieViewModel.getDetailMovie(id.toString(), favorite, category).observe(this) { detail ->
+
+                    detailMovieViewModel.getDetailMovie(id.toString()).observe(this) { detail ->
                         if (detail != null) {
                             when (detail) {
                                 is Resource.Loading -> showLoading(true)
@@ -54,8 +51,7 @@ class DetailMovieActivity : AppCompatActivity() {
                             }
                         }
                     }
-                }
-            }
+
         }
     }
 
@@ -103,7 +99,5 @@ class DetailMovieActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_ID = "extra_id"
-        const val EXTRA_CATEGORY = "extra_category"
-        const val EXTRA_FAVORITE = "extra_favorite"
     }
 }

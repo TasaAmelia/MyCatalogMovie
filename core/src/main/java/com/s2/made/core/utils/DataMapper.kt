@@ -7,7 +7,7 @@ import com.s2.made.core.domain.model.Movie
 object DataMapper {
     fun mapResponsesToEntities(
             input: List<MovieResponse>,
-//            category: String
+            //
     ): List<MovieEntity> {
         val catalogList = ArrayList<MovieEntity>()
         var genre = ""
@@ -35,8 +35,6 @@ object DataMapper {
 
     fun mapResponseToEntity(
             input: MovieResponse,
-//            category: String,
-//            state: Boolean
     ): MovieEntity {
         var genre = ""
         input.genres?.forEach { gen ->

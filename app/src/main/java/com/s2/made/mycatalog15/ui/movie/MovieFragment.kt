@@ -45,8 +45,6 @@ class MovieFragment : Fragment() {
             movieAdapter.onItemClick = { selectedData ->
                 Intent(activity, DetailMovieActivity::class.java).apply {
                     putExtra(DetailMovieActivity.EXTRA_ID, selectedData.id)
-                    putExtra(DetailMovieActivity.EXTRA_CATEGORY, selectedData.category)
-                    putExtra(DetailMovieActivity.EXTRA_FAVORITE, selectedData.favorite)
                     startActivity(this)
                 }
             }
